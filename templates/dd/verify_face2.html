@@ -1,0 +1,71 @@
+<html>
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Cloud</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- site icon -->
+      <link rel="icon" href="../static/images/fevicon.png" type="image/png" />
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+      <!-- site css -->
+      <link rel="stylesheet" href="../static/style.css" />
+      <!-- responsive css -->
+      <link rel="stylesheet" href="../static/css/responsive.css" />
+      <!-- color css -->
+      <link rel="stylesheet" href="../static/css/colors.css" />
+      <!-- select bootstrap -->
+      <link rel="stylesheet" href="../static/css/bootstrap-select.css" />
+      <!-- scrollbar css -->
+      <link rel="stylesheet" href="../static/css/perfect-scrollbar.css" />
+      <!-- custom css -->
+      <link rel="stylesheet" href="../static/css/custom.css" />
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+   </head>
+   <body style="background-color:#214162">
+
+										
+  
+  <script>
+//Using setTimeout to execute a function after 5 seconds.
+setTimeout(function () {
+   //Redirect with JavaScript
+ window.location.href="/verify_face2?vid={{vid}}"
+}, 10000);
+</script>
+                                                   
+                                                   
+                                                {% if act=="1" %}
+												<span style="color:#00FF33">{{msg}}</span><br>
+												<br>
+												<img src="../static/acc1.png">
+												  <script>
+												//Using setTimeout to execute a function after 5 seconds.
+												setTimeout(function () {
+												   //Redirect with JavaScript
+												 window.parent.location.href="/verify_finger?vid={{vid}}"
+												}, 5000);
+												</script>
+												{% else %}
+												
+												
+												<span style="color:#FFFF99">{{msg}}</span><br>
+												<br>
+												<img src="../static/acc2.png">
+												{% endif %}
+												
+												
+										
+                                   
+   </body>
+</html>
